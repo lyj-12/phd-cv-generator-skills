@@ -89,6 +89,14 @@ xelatex <主文件名>.tex
 
 简历模板来自 [awesome-resume-for-chinese](https://github.com/dyweb/awesome-resume-for-chinese)
 
+
+
+# 安装 phd-cv-generator skills
+
+codex/claude code：帮我安装这个skill [lyj-12/phd-cv-generator-skills](https://github.com/lyj-12/phd-cv-generator-skills)
+
+
+
 # Prompt 示例
 
 ``` markdown
@@ -168,3 +176,6 @@ xelatex <主文件名>.tex
 
 
 ![image-20260624191303235](README.assets/image-20260624191303235.png)
+
+
+
