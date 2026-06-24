@@ -62,8 +62,9 @@ def main():
         shutil.rmtree(output_dir)
     shutil.copytree(src, output_dir)
 
-    main_name = tmpl["main"]
-    main_path = os.path.join(output_dir, main_name)
+    # Output filename: {name}-定向{advisor}简历.tex (or template default as fallback)
+    out_name = name + suffix + "简历.tex" if name else tmpl["main"]
+    main_path = os.path.join(output_dir, out_name)
     tex_content = data.get("tex_content", "")
     if tex_content:
         with open(main_path, "w", encoding="utf-8") as f:

@@ -87,18 +87,18 @@ xelatex <主文件名>.tex
 - 支持中英文：选择英文模板内容用英文，中文模板用中文
 - 需要 LaTeX 环境：建议安装 TeXLive 或 MiKTeX
 
-
-
-
+简历模板来自 [awesome-resume-for-chinese](https://github.com/dyweb/awesome-resume-for-chinese)
 
 # Prompt 示例
 
 ``` markdown
+个人信息和导师信息，请使用phd-cv-generator skills 生成个人-导师的定向简历, 模板使用dark-blue-zh
+
 # 个人信息：
 ## 个人介绍
 
 姓名：林子丹
-个人照片：D:\images\avatar.png
+个人照片：D:\学术简历模板\skills\phd-cv-generator\static\avatar.png
 
 研究方向：海上风电预测；智能优化算法；深度学习时序建模；工业系统建模
 

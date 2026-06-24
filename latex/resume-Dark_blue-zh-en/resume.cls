@@ -79,12 +79,35 @@
 
 % Fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont{IBM Plex Serif}
-\setmonofont{IBM Plex Mono}
+% Western fonts — IBM Plex on Linux/macOS, system serif/mono on Windows
+\IfFontExistsTF{IBM Plex Serif}{
+  \setmainfont{IBM Plex Serif}
+}{
+  \setmainfont{Times New Roman}
+}
+\IfFontExistsTF{IBM Plex Mono}{
+  \setmonofont{IBM Plex Mono}
+}{
+  \setmonofont{Courier New}
+}
 
 % Chinese setup
 \ifdef{\@zh}{
-  \setCJKmainfont{FandolSong}
+  % Prefer static (non-VF) CJK fonts — VF fonts crash xdvipdfmx.
+  % Chain: Noto Serif CJK SC > FandolSong (TeX Live) > SimSun (Windows)
+  \IfFontExistsTF{Noto Serif CJK SC}{
+    \setCJKmainfont{Noto Serif CJK SC}
+  }{
+    \IfFontExistsTF{FandolSong}{
+      \setCJKmainfont{FandolSong}
+    }{
+      \IfFontExistsTF{SimSun}{
+        \setCJKmainfont{SimSun}
+      }{
+        \setCJKmainfont{Songti SC}  % macOS fallback
+      }
+    }
+  }
   % Redefine '\emph' to bold style
   % Credit: https://tex.stackexchange.com/a/227644
   \let\emph\relax  % there's no \RedeclareTextFontCommand
