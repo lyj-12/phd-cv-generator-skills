@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.27)  24 JUN 2026 18:15
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.27)  24 JUN 2026 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -938,7 +938,7 @@ other characters in Unicode lower plane
 ) (d:/dev/texlive/2024/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
 File: xunicode-extra.def 2022/08/05 v3.9.1 extra definition for xunicode
 )
-No file template_cn_blue.aux.
+(./template_cn_blue.aux)
 \openout1 = `template_cn_blue.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
@@ -952,6 +952,7 @@ LaTeX Font Info:    ... okay on input line 117.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
 17.
+
 (d:/dev/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -1094,10 +1095,6 @@ Package hyperref Info: Link coloring OFF on input line 117.
 \@outlinefile=\write4
 \openout4 = `template_cn_blue.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \makecvheaddetailsbox=\box73
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10> not avai
 lable
@@ -1107,6 +1104,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 119.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 119.
+
 (d:/dev/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
@@ -1145,23 +1143,13 @@ e
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 
 122.
 
-Overfull \hbox (3.60248pt too wide) in paragraph at lines 158--158
+Overfull \hbox (3.60248pt too wide) in paragraph at lines 153--153
  []|[]\TU/TimesNewRoman(0)/m/n/10.95 netjsongraph.js[]|
  []
 
-Runaway argument?
-! Paragraph ended before \\cvlistitem was complete.
-<to be read again> 
-                   \par 
-l.170 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 [1
 
-] (./template_cn_blue.aux)
+] [2] (./template_cn_blue.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -1170,22 +1158,16 @@ L3 programming layer <2022/08/05>
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `template_cn_blue.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `template_cn_blue.out':
-(rerunfilecheck)             Before: 340579D7F0B43B0A74CC5A18B20BE79C;541
-(rerunfilecheck)             After:  7F58FADEF1061A5DF146C3AF4B8957A9;470.
+Package rerunfilecheck Info: File `template_cn_blue.out' has not changed.
+(rerunfilecheck)             Checksum: 710E14FF5BA5873D11F9C1E0B1FF91D3;545.
  ) 
 Here is how much of TeX's memory you used:
- 33976 strings out of 474773
- 684978 string characters out of 5759509
- 1980842 words of memory out of 5000000
- 55606 multiletter control sequences out of 15000+600000
+ 34003 strings out of 474773
+ 686575 string characters out of 5759509
+ 1984842 words of memory out of 5000000
+ 55631 multiletter control sequences out of 15000+600000
  562078 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 129i,11n,129p,1013b,455s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 129i,12n,129p,1013b,455s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template_cn_blue.pdf (1 page).
+Output written on template_cn_blue.pdf (2 pages).
