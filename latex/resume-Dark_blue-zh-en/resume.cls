@@ -146,12 +146,6 @@
 % Non-numbered pages
 \pagestyle{empty}
 
-% Last-page style
-\def\ps@lastpage{%
-  \def\@oddfoot{\textcolor{gray}{\footnotesize\@fileinfo}\hfil}%
-  \def\@evenfoot{\textcolor{gray}{\footnotesize\@fileinfo}\hfil}%
-}
-\AtEndDocument{\thispagestyle{lastpage}}
 
 % No paragraph indentation
 \setlength{\parindent}{0em}
@@ -279,7 +273,6 @@
 % Keywords
 \newcommand*{\keywords}[1]{\def\@keywords{#1}}
 % File information
-\newcommand*{\fileinfo}[1]{\def\@fileinfo{#1}}
 
 % Photo:
 % \photo[

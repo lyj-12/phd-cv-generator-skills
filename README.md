@@ -159,3 +159,6 @@ xelatex <主文件名>.tex
 
 
 
+
+
+![image-20260624190233254](D:\学术简历模板\skills\phd-cv-generator\README.assets\image-20260624190233254.png)

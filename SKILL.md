@@ -224,36 +224,35 @@ cd <output> && xelatex <main.tex>
 生成简历时，论文列表必须严格按照以下格式编排（适用于所有模板）：
 
 **已发表论文格式：**
-> [序号] {AUTHOR_LIST}. {TITLE}. {JOURNAL}, {YEAR}.（{SCHOOL_RANK}，IF={IMPACT_FACTOR}，{STATUS}）
+> [序号] AUTHOR_LIST. (YEAR). TITLE. JOURNAL.（SCHOOL_RANK，IF=IMPACT_FACTOR，STATUS）
 
 **在审/待投论文格式：**
-> [序号] {TITLE}. {JOURNAL}.（Under Review / Submitted）
+> [序号] AUTHOR_LIST. (YEAR). TITLE. JOURNAL.（Under Review / Submitted）
 
 | 字段 | 说明 | 示例 |
 |---|---|---|
 | [序号] | 数字编号，按重要性排序 | [1] |
-| AUTHOR_LIST | 完整作者列表，本人加粗 | Liu Y. (加粗) |
-| TITLE | 论文完整标题 | Robust urban air... |
-| JOURNAL | 期刊/会议名称，斜体 | Urban Climate (斜体) |
-| YEAR | 发表年份 | 2025 |
-| SCHOOL_RANK | 中科院分区 / CCF等级 | 中科院二区 / CCF-A |
-| IF | 影响因子（可选） | 7.3 |
-| STATUS | 标注一作/共一/通讯等 | 第一作者 |
+| AUTHOR_LIST | 作者列表（姓前名后缩写），本人加粗 | \textbf{Lin Z} |
+| YEAR | 发表年份，圆括号 | (2026) |
+| TITLE | 论文完整标题，首字母大写 | Physics-informed hybrid... |
+| JOURNAL | 期刊/会议名称，斜体 | \textit{Renewable Energy} |
+| SCHOOL_RANK | 中科院分区 / CCF等级 | SCI二区 / CCF-A |
+| IF | 影响因子 | 8.1 |
+| STATUS | 论文状态或作者角色 | 已发表 / 第一作者 |
 
 **示例（已发表）：**
-> [1] \\textbf{Liu Y.}, Miao F., et al. Robust urban air quality index prediction for pollution management via entropy-guided multiscale denoising and optimization-driven neuro-fuzzy modeling. \\textit{Urban Climate}, 2025.（中科院二区，IF=5.1，第一作者）
+> [1] Lin Z, Wang Q. (2026). Physics-informed hybrid neural network for offshore wind speed prediction under nonlinear turbulence conditions. \textit{Renewable Energy}.（SCI二区，IF=8.1，已发表）
 
 **示例（在审）：**
-> [4] A Bidirectional Multiscale Temporal Adaptive Network for Multimodal Physiological Signal Fusion in Emotion Recognition. \\textit{Applied Soft Computing Journal}.（Under Review）
+> [2] Lin Z, Wang Q. (2026). Physics-informed hybrid neural network for offshore wind speed prediction under nonlinear turbulence conditions. \textit{Renewable Energy}.（Under Review）
 
 **注意：**
 - 论文按重要性/影响力排序，不是按时间顺序
-- 本人姓名在 LaTeX 中用 \\\\textbf{} 加粗
-- 期刊名称在 LaTeX 中用 \\\\textit{} 斜体
+- 本人姓名在 LaTeX 中用 \textbf{} 加粗
+- 期刊名称在 LaTeX 中用 \textit{} 斜体
 - 层级分区和IF放在中文全角括号（）中
-- 在审论文不列作者列表，只写标题和期刊
-- 同一论文在英文版中用英文括号()，中文版中用中文括号（）
-
+- 在审论文与已发表论文格式一致，仅修改STATUS为Under Review
+- 英文版用英文括号()，中文版用中文括号（）
 ### 输出文件命名
 
 脚本自动生成的文件名格式：
