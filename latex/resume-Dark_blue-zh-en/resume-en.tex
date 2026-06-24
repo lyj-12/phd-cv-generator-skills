@@ -1,0 +1,243 @@
+%%
+%% Copyright (c) 2018-2020 Weitian LI <wt@liwt.net>
+%% CC BY 4.0 License
+%%
+%% Résumé
+%% ------
+%% A short document (1-2 pages) to sum up the job-related accomplishments
+%% and experience.
+%%
+%% Checklist
+%% ---------
+%% * Contact Information
+%% * Work History / Experience
+%% * Education
+%% * Skills
+%% * Summary & Objective (optional)
+%% * Hobbies & Interests (optional)
+%%
+%% Credits
+%% -------
+%% * CV vs. Resume: What is the Difference? When to Use Which?
+%%   https://uptowork.com/blog/cv-vs-resume-difference
+%% * How to Make a Resume: A Step-by-Step Guide (+30 Examples)
+%%   https://uptowork.com/blog/how-to-make-a-resume
+%% * Entry-Level Resume: Sample and Complete Guide (+20 Examples)
+%%   https://uptowork.com/blog/entry-level-resume-example
+%%
+%% Created: 2018-04-14
+%%
+
+% English version
+\documentclass{resume}
+
+
+\name{Weitian}{LI}
+
+\keywords{BSD, Linux, Programming, Python, C, Shell, DevOps, SysAdmin}
+
+% \tagline{\texorpdfstring{\icon{\faBinoculars} }{}<position-to-look-for>}
+% \tagline{<current-position>}
+
+% Show a photo beside the profile.
+% \photo[
+%   shape=<circular|square>,    % default is circular
+%   position=<left|right>,      % default is left
+% ]{<width>}{<filename>}
+% Example:
+% \photo[shape=square]{5em}{photo}
+
+\photo[
+shape=square,
+position=right,
+]{5.5em}{avatar.png}
+
+
+\profile{
+  \mobile{132-6262-0332}
+  \email{liweitianux@live.com}
+  \github{liweitianux} \\
+  \degree{Ph.D. in Physics}
+  \university{Shanghai Jiao Tong University (SJTU)}
+  \birthday{1991 Sept.}
+  \address{Shanghai}
+  % Custom information:
+  % \icontext{<icon>}{<text>}
+  % \iconlink{<icon>}{<link>}{<text>}
+}
+
+\begin{document}
+\makeheader
+
+%======================================================================
+% Summary & Objectives
+%======================================================================
+\begin{abstract}
+Highly-motivated Ph.D. in Physics (radio astronomy)
+with good foundations of math and statistics.
+Proficient in data modeling and analysis,
+and enthusiastic about computer and network technologies.
+With 10 years experience in Linux and BSD,
+skilled in Shell, Python, and C programming.
+Passionate about open source and share multiple projects on my
+\link{https://github.com/liweitianux}{GitHub}.
+Meanwhile a \link{https://www.dragonflybsd.org}{DragonFly BSD}
+operating system developer and a contributor to several other
+open source projects.
+\end{abstract}
+
+%======================================================================
+\sectionTitle{Education}{\faGraduationCap}
+%======================================================================
+\begin{educations}
+  \education%
+    {September 2013}%
+    [September 2019]%
+    {Shanghai Jiao Tong University}%
+    {School of Physics and Astronomy}%
+    {Physics}%
+    {Ph.D.}
+
+  \separator{0.5ex}
+  \education%
+    {September 2009}%
+    [June 2013]%
+    {Shanghai Jiao Tong University}%
+    {Department of Physics and Astronomy}%
+    {Applied Physics}%
+    {Bachelor's Degree}
+\end{educations}
+
+%======================================================================
+\sectionTitle{Academic Achievements}{\faAtom}
+%======================================================================
+\begin{itemize}
+  \item Developed the low-frequency radio sky image simulation software:
+    \link{https://github.com/liweitianux/fg21sim}{\texttt{FG21sim}}.
+  \item Developed a suite of utilities to semi-automate the
+    X-ray astronomical data analysis:
+    \link{https://github.com/liweitianux/chandra-acis-analysis}{\texttt{chandra-acis-analysis}}.
+  \item Separated the faint cosmological EoR signal along the frequency
+    dimension using a Convolutional Denoising Autoencoder (CDAE).
+  \item Classified the radio galaxies in the FIRST survey according to
+    morphologies using a Convolutional Neutral Network (CNN).
+  \item Significantly improved the modeling of radio halos,
+    and integrated the instrumental effects of radio interferometers
+    into the simulation pipeline.
+  \item Improved the background modeling in X-ray spectral fitting
+    achieved more accurate and robust fitting results.
+  \item Published 2 first-author and 8 co-authored SCI papers.
+\end{itemize}
+
+%======================================================================
+\sectionTitle{Research Experience}{\faFlask}
+%======================================================================
+\begin{itemize}
+  \item \link{https://github.com/liweitianux/atoolbox}{\texttt{atoolbox}}:
+    (Python, Shell)
+    Various tools collected over the years, to help manage systems,
+    do daily tasks, analyze data, etc.
+  \item \link{https://github.com/liweitianux/dfly-update}{\texttt{dfly-update}}:
+    (Shell)
+    A simple tool to update a DragonFly BSD system.
+  \item \link{https://github.com/liweitianux/openrcs}{\texttt{openrcs}}:
+    (C)
+    Enhance \texttt{OpenBSD RCS}, to make it compatible with \texttt{GNU RCS}.
+  \item \link{https://github.com/liweitianux/fg21sim}{\texttt{fg21sim}}:
+    (Python)
+    Simulate the low-frequency radio sky maps.
+  \item \link{https://github.com/liweitianux/cdae-eor}{\texttt{cdae-eor}}:
+    (Python, Keras)
+    Use a Convolutional Denoising Autoencoder (CDAE) to separate the
+    faint EoR signal.
+  \item \link{https://github.com/liweitianux/chandra-acis-analysis}{\texttt{chandra-acis-analysis}}:
+    (Python, Shell, Tcl)
+    Semi-automate utilities for analyzing X-ray astronomical data.
+  \item \link{https://github.com/liweitianux/resume}{\texttt{resume}}:
+    (\LaTeX)
+    The template and source files of \emph{this resume}.
+\end{itemize}
+
+
+\begin{experiences}
+  \experience%
+    [April 2018]%
+    {August 2018}%
+    {Data Engineer @ Leadvisor Technology Inc. (startup company)}%
+    [\begin{itemize}
+      \item Search and scrape product and advertising data from Amazon web
+        (Python, Requests, BeautifulSoup).
+      \item Deployed the Airflow server and database to periodically
+        retrieve product sales and advertising data from Amazon.
+      \item Developed the website (Flask, jQuery) to help customers to
+        optimize their advertising campaigns on Amazon.
+    \end{itemize}]
+
+  \separator{0.5ex}
+  \experience%
+    [July 2013]%
+    {September 2013}%
+    {Web Developer @ 97 Suifang (startup company)}%
+    [\begin{itemize}
+      \item Developed the back-end (Django) to support user registration,
+        data storage and search.
+      \item Developed the front-end (jQuery, AJAX) to visualize the
+        temporal variations of a patient's examination indicators.
+    \end{itemize}]
+\end{experiences}
+
+%======================================================================
+\sectionTitle{Research Skills}{\faWrench}
+%======================================================================
+
+\begin{competences}
+  \comptence{Programming \& Software}{%
+    Python (NumPy, SciPy, Astropy, Pandas),%
+    \enspace C/C++, Fortran, MATLAB, R, CUDA
+  }
+  \comptence{Data Analysis \& ML}{%
+    Bayesian Inference, MCMC, Deep Learning (PyTorch, TensorFlow),%
+    \enspace Signal / Image Processing, Statistical Modeling
+  }
+  \comptence{Radio Astronomy}{%
+    Interferometry Data Calibration \& Imaging (CASA, MIRIAD),%
+    \enspace Sky Image Simulation, Source Extraction (SExtractor)
+  }
+  \comptence{High-Perf. Computing}{%
+    MPI, OpenMP, SLURM, GPU Programming, Cluster Administration
+  }
+  \comptence{Scientific Tools}{%
+    \LaTeX, Git, Docker, Jupyter, GNUPlot, FITS Data Handling
+  }
+  \comptence{\icon{\faLanguage} Languages}{%
+    \textbf{English} --- fluent (reading, writing, speaking);%
+    \enspace \textbf{Chinese} --- native
+  }
+\end{competences}
+
+\begin{itemize}
+  \item Extensive experience in processing radio interferometric data
+    from SKA, LOFAR, VLA, and Chandra observations
+  \item Developed end-to-end simulation pipelines for predicting
+    future radio telescope performance and survey strategies
+  \item Proficient in Bayesian statistical techniques for astrophysical
+    parameter estimation and model selection
+  \item Built and maintained a 4-node HPC cluster for radio sky
+    image simulation and data analysis
+  \item Designed and trained convolutional neural networks (CNN) for
+    morphological classification of radio galaxies
+\end{itemize}
+
+%======================================================================
+\sectionTitle{Honors \& Awards}{\faTrophy}
+%======================================================================
+
+\begin{itemize}
+  \item National Scholarship for Graduate Students (2017, 2018)
+  \item Outstanding Academic Performance Award, Shanghai Jiao Tong University (2018)
+  \item First-Class Doctoral Candidate Scholarship (2016, 2017)
+  \item Best Presentation Award, Chinese Astronomical Society Annual Meeting (2018)
+  \item IAU Conference Travel Grant, International Astronomical Union (2019)
+\end{itemize}
+
+\end{document}

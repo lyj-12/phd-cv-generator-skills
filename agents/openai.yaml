@@ -1,0 +1,3 @@
+display_name: "PhD CV Generator"
+short_description: "Generate PhD application CVs tailored to target advisors"
+default_prompt: "I need a PhD application CV targeting a specific advisor. Please help me create a tailored academic CV using the Word templates."
