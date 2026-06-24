@@ -104,7 +104,7 @@ xelatex <主文件名>.tex
 
 联系方式：
 电话：13810294756
-邮箱：[linzidan_research@outlook.com](mailto:linzidan_research@outlook.com)
+邮箱：[linzidanresearch@outlook.com](mailto:linzidanresearch@outlook.com)
 
 籍贯：浙江宁波
 出生年月：2001.11
@@ -133,7 +133,7 @@ xelatex <主文件名>.tex
 
 [1] Lin d, Wang Q. Physics-informed hybrid neural network for offshore wind speed prediction under nonlinear turbulence conditions. Renewable Energy, 2026.（SCI二区，IF=8.1，已发表）
 
-[2] Deep contrastive learning framework for multi-site renewable energy forecasting under distribution shift. IEEE Transactions on Sustainable Energy.（Under Review）
+[2] Lin d, Wang Q. Deep contrastive learning framework for multi-site renewable energy forecasting under distribution shift. IEEE Transactions on Sustainable Energy.（SCI一区，Under Review）
 
 
 ## 科研能力陈述
@@ -143,6 +143,12 @@ xelatex <主文件名>.tex
 * 办公能力：熟练使用 Office 套件，具备规范学术论文排版与答辩汇报能力
 * 可视化能力：能够绘制复杂系统架构图、算法流程图及科研技术路线图
 * 综合能力：具备较强的独立科研能力、数学建模能力与工程问题抽象能力
+
+## 荣誉奖项
+- 研究生国家奖学金（2025国家级）
+- 硕士研究生学业一等奖学金（2024）
+- 优秀研究生奖学金 （2023）
+- 校级学术一等奖学金 （2022）
 
 
 # 导师信息
@@ -157,8 +163,8 @@ xelatex <主文件名>.tex
 在科研成果方面，申请/授权发明专利约20项，登记软件著作权10余项，参与编写风能相关技术专著1部，并为能源领域政策研究报告提供技术支持建议。学术活动方面，曾担任国际能源与可再生能源会议分会主席，并在国内外学术会议作邀请报告10余次。科研项目方面，主持国家级与省部级科研项目及产学研合作项目共计10余项，涵盖基础研究与工程应用多个方向。在人才培养方面，指导研究生及本科生团队在可再生能源与节能减排相关竞赛中多次获奖，包括国家级二等奖、三等奖及省级优秀科技作品奖等。曾获得研究生阶段学业奖学金、优秀毕业生等荣誉称号。
 ```
 
+## 生成示例：
 
 
 
-
-![image-20260624190233254](.\README.assets\image-20260624190233254.png)
+![image-20260624191303235](README.assets/image-20260624191303235.png)
